@@ -16,7 +16,9 @@ function verifyWord() {
 
     else if (userInput.value == "Cauã") {
         window.location = "https://cauam1203.netlify.app/";
-
+    }
+    else if (userInput.value == "Rhuan") {
+        window.location = "https://mostmagic.github.io/OnePage1";
     } else {
         userResult.innerHTML = "";
     }
