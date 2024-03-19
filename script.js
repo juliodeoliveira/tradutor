@@ -19,6 +19,7 @@ function verifyWord() {
     }
     else if (userInput.value == "Rhuan") {
         window.location = "https://mostmagic.github.io/OnePage1";
+        console.log("Teste");
     } else {
         userResult.innerHTML = "";
     }
