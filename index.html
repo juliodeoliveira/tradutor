@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradutor</title>
+    <link rel="stylesheet" href="tradutor.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tradutor</h1>
+        </header>
+        <main>
+            <section class="textos">
+                <div class="esquerda">
+                    <label for="texto-esquerda">De:</label>
+                    <select id="idioma-esquerda">
+                        <option value="pt">Português</option>
+                        <option value="en">Inglês</option>
+                        <option value="es">Espanhol</option>
+                        <option value="fr">Francês</option>
+                        <option value="de">Alemão</option>
+                        </select>
+                    <textarea oninput="verifyWord()" id="texto-esquerda" placeholder="Digite o texto para traduzir"></textarea>
+                </div>
+                <div class="direita">
+                    <label for="texto-direita">Para:</label>
+                    <select id="idioma-direita">
+                        <option value="en">Inglês</option>
+                        <option value="es">Espanhol</option>
+                        <option value="fr">Francês</option>
+                        <option value="de">Alemão</option>
+                        <option value="pt">Português</option>
+                        </select>
+                    <textarea id="texto-direita" readonly></textarea>
+                </div>
+            </section>
+            <section class="acoes">
+                <button id="traduzir" onselect="verifyWord()">Traduzir</button>
+                <button id="trocar">Trocar idiomas</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
